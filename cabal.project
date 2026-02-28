@@ -2,3 +2,8 @@ packages: .
 package om-show
   ghc-options:
     -Werror
+
+-- Allow GHC 9.14 support before all dependencies officially support it.
+allow-newer:
+  *:base
+  , *:template-haskell
